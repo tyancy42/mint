@@ -1,0 +1,82 @@
+header {
+	position: relative;
+	padding: 43px 50px 20px 50px;
+	width: 690px;
+	margin: 0 auto;
+}
+
+.logo,
+.sign-up {
+        display: inline;
+        text-align: right;
+        }
+        
+.content {
+	position: relative;
+	width: 690px;
+	overflow: auto;
+	margin: 8px 0;
+	padding: 25px 10px 15px 20px;
+	box-shadow: 2px 2px 10px 0 #aaa;
+	margin: 0 auto;
+}
+.content div {
+	position: relative;
+    
+}
+
+.left-bar {
+    float: left;
+    width: 66%;
+}
+
+.right-bar {
+    float: right;
+    width: 33%;
+    height: 450px;
+    border-left: 1px solid grey;
+}
+
+footer {
+clear: both;
+text-align: center;
+}
+
+footer li {
+    display: inline;
+}
+
+header li {
+    display: inline;
+}
+
+.info {
+    background-color: gray;
+}
+
+label {
+	font-weight: bold;
+	color: black;
+	display: inline;
+	height: 18px;
+}
+
+input { 
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    margin: 5px 0 28px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    }
+    
+input[type=checkbox] {
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+    }
