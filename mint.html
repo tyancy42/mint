@@ -11,7 +11,7 @@
                 <a href="https://www.mint.com"><img src="mint-logo.png" alt="Main mint logo"></a>
 			</div>
             <div class="sign-up">
-				<a href=“#”>link 1</a> | <a href=“#”>link 2</a>
+				<a href=“#”>Sign-Up</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href=“#”>Log-In</a>
 			</div>
         </header>
         <div class="content">
@@ -23,7 +23,13 @@
                 <input type="email" id="confirm-email"><br>
                 <label for="countries">Country</label><br>
                 <select id="countries" name="countries"><br>
-                    <option value="United States">United States</option>
+                    <optgroup label="Available now:" class="available">                    
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                    </optgroup>
+                    <optgroup label="Not yet available. Working on it:" class="value=unavailable-countries">
+                        <option value="All">Everywhere else!</option>
+                    </optgroup>
                 </select><br>
                 <label for="zip-code">Zip Code</label><br>
                 <input type="text" id="zip-code"><br>
