@@ -1,63 +1,90 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+}
+
 header {
-	position: relative;
-	padding: 43px 50px 0px 50px;
-	width: 690px;
-	margin: 0 auto;
+    position: relative;
+    padding: 43px 50px 0px 50px;
+    width: 690px;
+    margin: 0 auto;
 }
 
 header a { 
-color: #000000;
-text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 li a {
-color: #6F7375;
+    color: #6F7375;
+}
+.logo-buttons {
+    margin-bottom: 10px;
 }
 
-.logo, .sign-up {
-    display: inline;
-    }
+.logo {
+    display: inline-block;
+    width: 80%;
+}
+
 .sign-up {
-    padding-left: 430px;
-    }
-        
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+
+.sign-up a:first-child {
+    font-weight: bold;
+}
+
+.logo img{
+    height: 38px;
+} 
+
 .content {
-	position: relative;
-	width: 640px;
-	overflow: auto;
-	margin: 8px 0;
-	padding: 25px 10px 15px 50px;
-	box-shadow: 2px 2px 10px 0 #aaa;
-	margin: 0 auto;
+    position: relative;
+    width: 640px;
+    overflow: auto;
+    margin: 8px 0;
+    padding: 25px 10px 15px 50px;
+    box-shadow: 2px 2px 10px 0 #aaa;
+    margin: 0 auto;
     font-family: helvetica;
     box-shadow: 1px 1px 5px 0 #aaa;
     font-size: .875em;
 }
 
 .content h1 {
-padding-bottom: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
 }
 
 .content div {
-	position: relative;
-    
+    position: relative;
+
 }
 
 .left-bar {
     float: left;
-    width: 66%;
+    width: 61%;
+}
+
+.left-bar span a{
+    color: #006ea4;
 }
 
 .right-bar {
     float: right;
-    width: 33%;
-    height: 450px;
+    width: 38%;
+    height: 525px;
     border-left: 1px solid grey;
 }
 
 footer {
-clear: both;
-text-align: center;
+    clear: both;
+    text-align: center;
 }
 
 footer li {
@@ -69,25 +96,46 @@ header li {
 }
 
 .info {
-    background-color: #e8e8e8;
-    padding: 10px 15px 10px 0;
-    margin: 0 10px 0 15px;
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
     font-size: 11px;
     box-sizing: border-box;
     color: #6F7375;
+    letter-spacing: 1.05px;
+}
+
+.small {
+    font-size: 10px;
 }
 
 .info h3 {
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
     padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.info ul {
+    padding-left: 45px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    line-height: 1.2em;
+}
+
+.info li {
+    padding-bottom: 5px;
 }
 
 label {
-	font-weight: bold;
-	color: black;
-	display: inline;
-	height: 18px;
+    font-weight: 100;
+    color: black;
+    display: inline;
+    height: 18px;
+}
+.left-bar label:first-child {
+    font-weight: bold;
 }
 
 input, select{ 
@@ -100,35 +148,63 @@ input, select{
 }
 
 input[id=zip-code] {
-width: 80px;
+    width: 80px;
 }
 
 select {
     width: 250px;
     height: 30px;
-    }
-    
+}
+
 input[type=checkbox] {
     display: inline-block;
     width: 20px;
     margin-right: 5px;
     text-decoration: none;
-    }
-    
-.left-bar a{
-text-decoration: none;
-}
-    
-button {
-margin: 20px 0 20px 0;
-background-color: #edad3e;
-padding: 10px;
-border-radius: 8px;
-color: #ffffff;
 }
 
-.bottom-links ul li {
-padding: 0 10px 0 10px;
-font-size: 12px;
-font-family: helvetica;
+.left-bar a{
+    text-decoration: none;
+}
+
+button {
+    margin: 10px 0 30px 0;
+    padding: 10px 20px;
+    background: #45cae6;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.bottom-links {
+    letter-spacing: 1.2px;
+    margin-top: 40px;
+    font-size: 11px;
+}
+
+.bottom-links li {
+    padding: 0 15px 0 15px;
+    color: #a5a5a5;
+    font-family: helvetica;
+}
+
+.bottom-links li::after {
+    position: relative;
+    left: 15px;
+    content: "|";
+}
+
+.bottom-links li:last-child::after {
+    position: relative;
+    left: 15px;
+    content: "";
+}
+
+.bottom-links a {
+    text-decoration: none;
+}
+
+.security {
+    padding-bottom: 90px;
 }

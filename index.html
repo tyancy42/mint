@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mint > Start Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div class="logo-buttons">
+            <div class="logo">
+                <a href="https://www.mint.com"><img src="mint-logo.png" alt="Main mint logo"></a>
+            </div>
+            <div class="sign-up">
+                <a href=“#”>Sign up</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href=“#”>Log in</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div><h1>Create a new account</h1></div>
+        <div class="left-bar">
+            <label for="email">Your Email</label><br>              
+            <input type="email" id="email"><br>
+            <label for="confirm-email">Confirm Email</label><br>
+            <input type="email" id="confirm-email"><br>
+            <label for="countries">Country</label><br>
+            <select id="countries" name="countries"><br>
+                <optgroup label="Available now:" class="available">                    
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                </optgroup>
+                <optgroup label="Not yet available. Working on it:" class="value=unavailable-countries">
+                    <option value="All">Everywhere else!</option>
+                </optgroup>
+            </select><br>
+            <label for="zip-code">Zip Code</label><br>
+            <input type="text" id="zip-code"><br>
+            <label for="password">Password</label><br>
+            <input type="text" id="password"><br>
+            <label for="confirm-password">Confirm Password</label><br>
+            <input type="text" id="confirm-password"><br>
+            <input type="checkbox" value="agree" id="agree"><span>Yes, I agree to the Mint <a href="#">Terms of Use</a></span><br>
+            <button>Sign up</button>
+        </div>
+        <div class="right-bar">
+            <div class="info">
+                <h3>Why you'll love it</h3>
+                <ul>
+                    <li>See all your accounts in one place</li>
+                    <li>Set a budget and pay down your debt</li>
+                    <li>Find the best ways to grow your money</li>
+                    <li>Stay <a href="#" class="small">safe and secure</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="bottom-links">
+                <ul>
+                    <li><a href="#">Support Community</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Legal and Trademark Notices</a></li>
+                    <li><a href="#">About Intuit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="security">
+            <img src="security.png">                
+        </div>
+    </footer>
+</body>
